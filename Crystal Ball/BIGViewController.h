@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class BIGCrystalBall;
+
 @interface BIGViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+@property (strong, nonatomic) BIGCrystalBall *crystalBall;
+@property (strong, nonatomic) NSArray *colors;
+
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+- (void) makePrediction;
 
 @end
